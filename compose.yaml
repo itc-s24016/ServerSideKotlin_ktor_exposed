@@ -1,0 +1,16 @@
+services:
+  db:
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_PASSWORD: postgres16
+    ports:
+      - "5432:5432"
+    volumes:
+      - type: bind
+        source: "./postgres"
+        target: "/docker-entrypoint-initdb.d"
+      - type: volume
+        source: "pg_data"
+        target: "/var/lib/postgresql/data"
+volumes:
+  pg_data:
