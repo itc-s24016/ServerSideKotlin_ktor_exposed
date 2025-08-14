@@ -11,4 +11,5 @@ class BookEntity(id: EntityID<Long>) : LongEntity(id) {
     var title by Books.title
     var author by Books.author
     var releaseDate by Books.releaseDate
+    var isDeleted by Books.isDeleted
 }
