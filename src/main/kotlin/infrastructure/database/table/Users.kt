@@ -7,5 +7,5 @@ object Users : LongIdTable("users") {
     val email = varchar("email", 256).uniqueIndex()  //同じメアドで複数登録できないようにする
     val password = varchar("password", 128) // パスワードはハッシュ化して保存することを想定
     val name = varchar("name", 32) // ユーザー名
-    val roleType = enumeration<RoleType>("role_type")  //RoleType型の列を定義する
+    val roleType = enumerationByName<RoleType>("role_type", 16)  //RoleType型の列を定義する
 }
