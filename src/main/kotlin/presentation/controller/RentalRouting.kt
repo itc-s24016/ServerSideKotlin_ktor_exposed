@@ -10,6 +10,7 @@ import io.ktor.server.response.*
 import io.ktor.server.routing.Route
 import io.ktor.server.routing.application
 import io.ktor.server.sessions.*
+import io.ktor.server.sessions.sessions
 import jp.ac.it_college.std.s24016.kotlin.ktor.book.manager.application.service.RentalService
 import jp.ac.it_college.std.s24016.kotlin.ktor.book.manager.domain.model.UserPrincipal
 import jp.ac.it_college.std.s24016.kotlin.ktor.book.manager.presentation.form.DeleteRentalEndResponse

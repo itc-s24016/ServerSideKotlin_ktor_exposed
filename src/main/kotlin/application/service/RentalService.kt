@@ -41,7 +41,7 @@ class RentalService(
             book = bookWithRental.book,
             user = user,
             rentalDatetime = rentalDatetime,
-            returnDeadline = returnDeadline,
+            returnDeadline = returnDeadline
         )
         return rentalRepository.startRental(rentalInfo)
     }
